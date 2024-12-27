@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Sekolah</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .jumbotron {
@@ -17,35 +18,50 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navbar Perpustakaan">
         <div class="container">
+            <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <img src="img/logo.jpg" alt="Logo Perpustakaan" style="height: 40px; margin-right: 10px;">
                 Perpustakaan Sekolah
             </a>
+    
+            <!-- Toggler untuk layar kecil -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
+            <!-- Menu Navbar -->
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#informasi">Informasi</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
+                    <!-- Dropdown Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Layanan</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#pendaftaran">Pendaftaran Anggota</a></li>
+                          <li><a class="dropdown-item" href="#informasi">Informasi Layanan</a></li>
+                        </ul>
+                      </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#koleksi">Koleksi</a>
+                        <a class="nav-link" href="#koleksi">Koleksi</a>
                     </li>
                 </ul>
+    
+                <!-- Form Pencarian -->
                 <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2 bg-dark text-white border-light" type="search" placeholder="Cari buku..." aria-label="Search" required>
+                    <button class="btn btn-outline-success" type="submit">Cari</button>
                 </form>
             </div>
         </div>
     </nav>
+    
     
     
 
@@ -188,8 +204,7 @@
         </p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwjjqdqoCk-mAKBcnRp5OFceWsa5lPVfailzjGUdozqXnFJKyOgOssU6CIMZbSY4ItUCQ/exec'
